@@ -33,10 +33,11 @@ Set up the Wazuh Indexer as the search and storage component of the SOC lab.
 - How OpenSearch-based services use TLS
 - How to troubleshoot failed Linux services
 
-## Screenshots
+## Checking Active Status of Wazuh Indexer
 
 ![Checking Active Status Of Wazuh Indexer](./Indexer-Active.png)
 
-Checking Active Status of Wazuh Indexer
+## Initiating Node Cluster Locally
 
+![Initializing Node Cluster](./Init-Node-Cluster.png)
 
