@@ -37,3 +37,6 @@ Set up the Wazuh Indexer as the search and storage component of the SOC lab.
 
 ![Checking Active Status Of Wazuh Indexer](./Indexer-Active.png)
 
+Checking Active Status of Wazuh Indexer
+
+
