@@ -6,7 +6,7 @@ This repository documents my ongoing SOC lab build, focused on blue team operati
 
 | Phase | Component | Status | Documentation |
 |---|---|---|---|
-| 1 | Wazuh Indexer | Completed / In Progress | [View Docs](./Wazuh-Indexer/README.md) |
-| 2 | Wazuh Dashboard | In Progress | [View Docs](./02-wazuh-dashboard/README.md) |
-| 3 | Wazuh Manager | Planned | [View Docs](./03-wazuh-manager/README.md) |
+| 1 | Wazuh Indexer | Completed | [View Docs](./Wazuh-Indexer/README.md) |
+| 2 | Wazuh Dashboard | Completed | [View Docs](./02-wazuh-dashboard/README.md) |
+| 3 | Wazuh Manager | In-Progress | [View Docs](./03-wazuh-manager/README.md) |
 | 4 | Greylog Log Ingester | Planned | [View Docs](./04-greylog-log-ingester/README.md) |
