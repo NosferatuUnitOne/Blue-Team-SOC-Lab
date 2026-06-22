@@ -2,6 +2,16 @@
 
 This repository documents my ongoing SOC lab build, focused on blue team operations, log collection, detection, SIEM integration, and cloud/security monitoring concepts.
 
+## Environment
+- Kali Linux VM
+- VirtualBox
+- Local lab network
+
+## GOAL
+
+To Test and Configure A Blue Team SOC LAB
+To Configure the LAB onto Cloud Solutions
+
 ## Lab Phases
 
 | Phase | Component | Status | Documentation |
