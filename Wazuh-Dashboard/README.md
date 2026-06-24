@@ -22,3 +22,19 @@ Set up the Wazuh Dashboard as the UI and Visual component of the SOC lab.
 ## What I Learned
 - How Wazuh Dashboard fits into the SOC stack
 - Why certificate permissions matter how to route them to different services
+
+##Configuring Opensearch-dashboard.yml File
+
+![Configuring Opensearch-dashboard.yml File](./Dasboard-yml-config.png)
+
+##Activating Wazuh Dashboard Service and Verifying Status `using systemctl`
+
+![Activating Dashboard Service and Verifying Status](./Dashboard-Service-Activation.png)
+
+##Checking Ports and Listening Services to verify Functionality `using netstat -ltpdn`
+
+![Checking Ports and Listening Services to verify Functionality](./Listening-Port-Verification.png)
+
+##Connecting to Wazuh Dashboard on Local Browser `hostname/ip:port`
+
+![Connecting to Wazuh Dashboard on Local Browser](./Dashboard-UI.png)
