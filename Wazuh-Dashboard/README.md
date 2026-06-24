@@ -4,8 +4,8 @@
 Set up the Wazuh Dashboard as the UI and Visual component of the SOC lab.
 
 ## Steps Completed
-- Already Installed Wazuh repository and GPG key
-- apt install Wazuh Dashboard
+- Reused the previously configured Wazuh repository and GPG key
+- - Installed Wazuh Dashboard using `apt install wazuh-dashboard`
 - I extracted the Wazuh certificate files from the tar archive and placed them in the Wazuh Dashboard certificate directory, then configured opensearch_dashboards.yml to point to those certificate paths.
 - Configured `opensearch-dashboards.yml`
 - Set file permissions and ownership to Wazuh Dashboard
@@ -13,7 +13,7 @@ Set up the Wazuh Dashboard as the UI and Visual component of the SOC lab.
 - Checked to make sure the ports and service was accessible `netstat -ltpdn` or `sudo ss -ltnp`
 
 ## Issues Faced
-- None, very straigth forward set up
+- No major issues; setup was straightforward compared to the Indexer phase.
 
 ## Verification
 - Checked service status with `systemctl status wazuh-dashboard`
@@ -21,7 +21,7 @@ Set up the Wazuh Dashboard as the UI and Visual component of the SOC lab.
 
 ## What I Learned
 - How Wazuh Dashboard fits into the SOC stack
-- Why certificate permissions matter how to route them to different services
+- Why certificate permissions matter and how different Wazuh services reference their certificate paths
 
 ## Configuring Opensearch-dashboard.yml File
 
