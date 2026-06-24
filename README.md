@@ -9,8 +9,7 @@ This repository documents my ongoing SOC lab build, focused on blue team operati
 
 ## GOAL
 
-To Test and Configure A Blue Team SOC LAB
-To Configure the LAB onto Cloud Solutions
+Build and document a functional Blue Team SOC lab using Wazuh, log collection, detection workflows, and eventually cloud-based security monitoring.
 
 ## Lab Phases
 
@@ -19,4 +18,4 @@ To Configure the LAB onto Cloud Solutions
 | 1 | Wazuh Indexer | Completed | [View Docs](./Wazuh-Indexer/README.md) |
 | 2 | Wazuh Dashboard | Completed | [View Docs](./Wazuh-Dashboard/README.md) |
 | 3 | Wazuh Manager | In-Progress | [View Docs](./03-wazuh-manager/README.md) |
-| 4 | Greylog Log Ingester | Planned | [View Docs](./04-greylog-log-ingester/README.md) |
+| 4 | Graylog Log Ingester | Planned | [View Docs](./04-greylog-log-ingester/README.md) |
