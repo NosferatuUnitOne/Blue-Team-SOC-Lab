@@ -25,7 +25,7 @@ Set up the Wazuh Dashboard as the UI and Visual component of the SOC lab.
 
 ##Configuring Opensearch-dashboard.yml File
 
-![Configuring Opensearch-dashboard.yml File](./Dasboard-yml-config.png)
+![Configuring Opensearch-dashboard.yml File](./Dashboard-yml-config.png)
 
 ##Activating Wazuh Dashboard Service and Verifying Status `using systemctl`
 
