@@ -1,4 +1,4 @@
-# Phase 2: Graylog Server Setup
+# Phase 4: Graylog Server Setup
 
 ## Goal
 
@@ -28,6 +28,7 @@ The Kali VM used a **Bridged Adapter**, allowing it to communicate with the Wind
 * Hosted MongoDB on the Windows host using Docker Desktop
 * Published MongoDB on TCP port `27017`
 * Verified MongoDB connectivity from the Kali VM using Netcat
+* Setup a firewall rule to configure accessibility only to the Kali VM on port `27017`
 * Configured Graylog’s `mongodb_uri` to point to the Windows host MongoDB container
 * Configured Graylog’s `elasticsearch_hosts` to connect to Wazuh Indexer/OpenSearch
 * Fixed TLS hostname verification issues between Graylog and the indexer
@@ -51,6 +52,8 @@ docker run -d `
   -v graylog_mongo_data:/data/db `
   mongo:6
 ```
+
+![Setting Up Docker in Powershell](./Indexer-Active.png)
 
 The container was verified using:
 
