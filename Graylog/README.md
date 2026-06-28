@@ -67,7 +67,9 @@ The expected result was for Docker to expose MongoDB on port `27017`, similar to
 0.0.0.0:27017->27017/tcp
 ```
 
-![Setting Up Docker in Powershell](./Powershell-Init-Docke.png)
+Or checking the up status of the configuration with the `Docker Desktop App`
+
+![Docker Desktop App](./Docker-Init.png)
 
 ---
 
@@ -103,6 +105,20 @@ The result returned `open`, confirming that the Graylog VM could reach MongoDB o
 
 ---
 
+## Firewall Rule Configuration
+
+Since Graylog's dependancy `mongodb` relied on AVX and is to be connected from the Kali VM (that runs Graylog) to my Windows (Host Machine), the port `27017` needed to be open continuously.
+
+A good practice to ensure security during this connectivity, was to apply a `Firewall` Rule.
+
+
+
+![Adding Firewall Rule](./Setting-Firewall-Rule.png)
+
+This Firewall Rule ensures that only my Kali VM is able to access and connect, when on the port `27017`.
+
+---
+
 ## Graylog Configuration
 
 The main Graylog configuration file was edited using:
@@ -116,6 +132,10 @@ The MongoDB URI was configured to point to the MongoDB container running on the 
 ```conf
 mongodb_uri = mongodb://<WINDOWS_HOST_IP>:27017/graylog
 ```
+
+Created a `user account` on the indexer/OpenSearch to allow accessability and privillage to Graylog
+
+![Setting up Account](./Setting-Graylog-User.png)
 
 The indexer/OpenSearch connection was configured using:
 
@@ -224,6 +244,7 @@ curl -k -u 'admin:admin' \
   -X POST 'https://172.16.0.111:9200/_bulk?pretty' \
   --data-binary $'{ "index" : { "_index" : "graylog-test" } }\n{ "message" : "test from curl" }\n'
 ```
+![Testing Graylog Output](./Testing-Graylog-Output.png)
 
 A successful response showed:
 
