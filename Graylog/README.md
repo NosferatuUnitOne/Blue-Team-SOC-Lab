@@ -1,4 +1,4 @@
-<img width="1023" height="651" alt="image" src="https://github.com/user-attachments/assets/ccd608f3-a47a-4f2b-ba03-4ce0bd1f8e17" /># Phase 4: Graylog Server Setup
+# Phase 4: Graylog Server Setup
 
 ## Goal
 
