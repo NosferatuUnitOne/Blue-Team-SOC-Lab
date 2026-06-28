@@ -244,7 +244,7 @@ curl -k -u 'admin:admin' \
   -X POST 'https://172.16.0.111:9200/_bulk?pretty' \
   --data-binary $'{ "index" : { "_index" : "graylog-test" } }\n{ "message" : "test from curl" }\n'
 ```
-![Testing Graylog Output](./Testing-Graylog-Output.png)
+![Testing Graylog Output](./Graylog-Output.png)
 
 A successful response showed:
 
