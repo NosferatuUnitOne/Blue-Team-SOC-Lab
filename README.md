@@ -18,4 +18,4 @@ Build and document a functional Blue Team SOC lab using Wazuh, log collection, d
 | 1 | Wazuh Indexer | Completed | [View Docs](./Wazuh-Indexer/README.md) |
 | 2 | Wazuh Dashboard | Completed | [View Docs](./Wazuh-Dashboard/README.md) |
 | 3 | Wazuh Manager | In-Progress | [View Docs](./03-wazuh-manager/README.md) |
-| 4 | Graylog Log Ingester | Planned | [View Docs](./04-greylog-log-ingester/README.md) |
+| 4 | Graylog Log Ingester | Completed | [View Docs](./Graylog/README.md) |
