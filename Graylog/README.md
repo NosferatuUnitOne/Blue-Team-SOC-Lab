@@ -279,6 +279,7 @@ sudo systemctl status graylog-server
 * Why MongoDB 5+ requires AVX support
 * How to work around VM CPU limitations by hosting MongoDB on the Windows host with Docker
 * How bridged networking allows a VM to communicate with the host over the LAN
+* Why its best practice to configure a Firewall Rule to protect Exposed Ports
 * Why using the correct network adapter IP matters
 * How to test service connectivity using `nc`
 * How to test HTTPS API access using `curl`
