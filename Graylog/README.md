@@ -1,12 +1,12 @@
-# Phase 4: Graylog Server Setup
+<img width="1023" height="651" alt="image" src="https://github.com/user-attachments/assets/ccd608f3-a47a-4f2b-ba03-4ce0bd1f8e17" /># Phase 4: Graylog Server Setup
 
 ## Goal
 
 Set up Graylog as the log management and SIEM interface for the SOC lab, using MongoDB for configuration storage and Wazuh Indexer/OpenSearch as the search backend.
 
-## Lab Architecture
+## Architecture
 
-Graylog was deployed inside the Kali Linux VM, while MongoDB was hosted separately on the Windows host using Docker Desktop.
+Graylog was deployed inside the Kali Linux VM, while MongoDB was hosted separately on the Windows host using Docker Desktop, as AVX was not parsing through to the VM that hosted Graylog. 
 
 ```text
 Windows Host
@@ -53,7 +53,7 @@ docker run -d `
   mongo:6
 ```
 
-![Setting Up Docker in Powershell](./Indexer-Active.png)
+![Setting Up Docker in Powershell](./Powershell-Init-Docker.png)
 
 The container was verified using:
 
@@ -67,7 +67,11 @@ The expected result was for Docker to expose MongoDB on port `27017`, similar to
 0.0.0.0:27017->27017/tcp
 ```
 
+![Setting Up Docker in Powershell](./Powershell-Init-Docke.png)
+
 ---
+
+
 
 ## Virtual Machine Network Configuration
 
@@ -94,6 +98,8 @@ nc -vz <WINDOWS_HOST_IP> 27017
 ```
 
 The result returned `open`, confirming that the Graylog VM could reach MongoDB over the local network.
+
+![Confirming that the port is Open](./Confirming-Port-Open.png)
 
 ---
 
@@ -125,6 +131,8 @@ http_external_uri = http://172.16.0.111:9000/
 ```
 
 This allowed the Graylog web interface to be accessed from another machine on the local network.
+
+![Greylog UI Accessible](./Graylog-UI.png)
 
 ---
 
