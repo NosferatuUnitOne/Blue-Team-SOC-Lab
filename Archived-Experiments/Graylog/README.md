@@ -1,4 +1,9 @@
-# Phase 4: Graylog Server Setup
+# Archived Phase 4: Graylog Server Setup
+
+> This Graylog setup was originally tested as a log ingestion/SIEM layer, but it was removed from the final SOC lab architecture due to compatibility issues between Graylog 6.6, and the Wazuh Indexer of version 7.10.2.
+
+> The final architecture now uses Filebeat as the log shipper because it integrates more cleanly with the Wazuh stack.
+
 
 ## Goal
 
