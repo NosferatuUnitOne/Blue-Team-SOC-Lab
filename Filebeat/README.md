@@ -48,6 +48,6 @@ Adding in the module resolved the issue
 
 Using the built in command tool `filebeat test output` rendered a proper status or health output, which green lit the tool **Filebeat** to be added into the entire **SOC Architecture**. 
 
-
+![Filebeat Output Test to secure a Verification](./Filebeat-Test-Output.png)
 
 
