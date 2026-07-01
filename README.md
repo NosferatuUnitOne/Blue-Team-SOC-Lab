@@ -24,4 +24,4 @@ Build and document a functional Blue Team SOC lab using Wazuh, log collection, d
 
 | Component | Status | Documentation |
 |---|---|---|
-| Graylog | Compatibility Missmatch | .[View Docs](./Archived-Experiments/Graylog/README.md) |
+| Graylog | Compatibility Missmatch | [View Docs](./Archived-Experiments/Graylog/README.md) |
