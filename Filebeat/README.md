@@ -32,6 +32,22 @@ Filebeat forwards processed Wazuh alerts from the Wazuh Manager to the Wazuh Ind
 
 ## Issue with bootup due to `usr/share/filebeat/module/wazuh` not being found
 
+Using `journalctl` and `tail` commands allowed for better and smoother workflow when it came to **trouble shooting**.
+
 ![Issue with Bootup](./Filebeat-Bootup-Error.png)
+
+Configured a proper directory to `usr/share/filebeat/module/wazuh` and installed the needed configurations for Filbeat's use case, using `curl` 
+
+```text
+sudo curl -s https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.4.tar.gz | sudo tar -xvz -C /usr/share/filebeat/module
+```
+
+Adding in the module resolved the issue 
+
+## Verification
+
+Using the built in command tool `filebeat test output` rendered a proper status or health output, which green lit the tool **Filebeat** to be added into the entire **SOC Architecture**. 
+
+
 
 
