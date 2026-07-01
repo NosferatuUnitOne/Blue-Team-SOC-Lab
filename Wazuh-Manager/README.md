@@ -57,7 +57,7 @@ The Wazuh Manager service status was checked using:
 sudo systemctl status wazuh-manager
 ```
 
-
+![Active Status of Manager](./Wmanager-Status,png)
 
 A successful result showed that the service was active and running.
 
