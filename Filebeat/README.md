@@ -30,6 +30,8 @@ Filebeat forwards processed Wazuh alerts from the Wazuh Manager to the Wazuh Ind
 - Needed to verify Filebeat-to-Indexer connectivity
 - Needed to confirm alerts were reaching the Wazuh Dashboard
 
+## Issue with bootup due to `usr/share/filebeat/module/wazuh` not being found
+
 ![Issue with Bootup](./Filebeat-Bootup-Error.png)
 
-## Issue with bootup due to `usr/share/filebeat/module/wazuh` not being found
+
