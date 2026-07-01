@@ -15,6 +15,13 @@ The Wazuh Manager is responsible for receiving, processing, and analyzing securi
 * Enabled the service to start automatically on boot
 * Verified that the service was running successfully
 * Confirmed that the Wazuh Manager was ready for agent connections
+* Initialized Groups within the Wazuh Dashboard for a better streamlined and organized input
+```text
+1. Linux
+2. Windows
+3. Default
+```
+* Configured the `XML file`'s for deloyed **Wazuh Agents**
 
 ---
 
@@ -50,17 +57,11 @@ The Wazuh Manager service status was checked using:
 sudo systemctl status wazuh-manager
 ```
 
+
+
 A successful result showed that the service was active and running.
 
-Additional verification commands used:
 
-```bash
-sudo systemctl is-active wazuh-manager
-```
-
-```bash
-sudo systemctl is-enabled wazuh-manager
-```
 
 ---
 
