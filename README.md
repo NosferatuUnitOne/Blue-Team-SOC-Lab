@@ -26,3 +26,7 @@ Build and document a functional Blue Team SOC lab using Wazuh, log collection, d
 | Component | Status | Documentation |
 |---|---|---|
 | Graylog | Compatibility Mismatch | [View Docs](./Archived-Experiments/Graylog/README.md) |
+
+## Log Pipline Architecture
+
+![Log Pipeline Architecture Diagram](./SIEM-STACK-ARCHITECTURE-LOG-PIPELINE.png)
