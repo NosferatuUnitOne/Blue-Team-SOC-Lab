@@ -268,21 +268,19 @@ Without deployed agents, the SIEM would have limited visibility. Adding agents t
 
 ## Screenshots
 
-## Windows Agent Service Verification
+## Agent Log Activity Verification
 
-![Windows Agent Service Verification](./Windows-Agent-Service.png)
+![Agent Log Activity Verification](./Sysmon-Install.png)
 
 ## Linux Agent Service Verification
 
-![Linux Agent Service Verification](./Linux-Agent-Service.png)
+![Linux Agent Service Verification](./Linux-Endpoint-Setup.png)
 
 ## Wazuh Dashboard Agent Status
 
-![Wazuh Dashboard Agent Status](./Agent-Active-Dashboard.png)
+![Wazuh Dashboard Agent Status](./Dashboard-Endpoints.png)
 
-## Agent Log Activity Verification
 
-![Agent Log Activity Verification](./Agent-Log-Activity.png)
 
 ---
 
